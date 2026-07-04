@@ -14,7 +14,7 @@ data/raw/
 data/processed/
 
 # Vector DB storage
-chroma_db/
+vector_store/
 *.sqlite3
 
 # OS/editor junk
