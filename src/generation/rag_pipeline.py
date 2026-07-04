@@ -84,6 +84,7 @@ Answer based only on the context above:"""
             options={
                 "num_predict": 100,
                 "num_ctx": 1024,
+                "temperature": 0.1,   # low randomness = more consistent, factual answers
             },
             keep_alive="30m",
         )

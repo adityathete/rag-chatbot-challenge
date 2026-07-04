@@ -66,7 +66,7 @@ if query:
     with st.chat_message("assistant"):
         with st.spinner("Retrieving relevant passages and generating answer..."):
             start = time.time()
-            chunks = pipeline.retrieve(query)
+            chunks = pipeline.retrieve(query, top_k=2)
             retrieval_time = time.time() - start
             answer = pipeline.generate_answer(query, chunks)
             total_time = time.time() - start
