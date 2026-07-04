@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Environment variables / secrets
+.env
+
+# Data files (PDFs are usually too big/private for GitHub)
+data/*.pdf
+data/raw/
+data/processed/
+
+# Vector DB storage
+chroma_db/
+*.sqlite3
+
+# OS/editor junk
+.DS_Store
+.vscode/settings.json
+
+# Logs
+*.log
